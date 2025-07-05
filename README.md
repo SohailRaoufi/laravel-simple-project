@@ -21,9 +21,12 @@ cp .env.example .env
 Edit the `.env` file and set your database credentials:
 
 ```
-DB_DATABASE=your_database
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=laravel
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
 ```
 
 ## 3. Run Migrations
