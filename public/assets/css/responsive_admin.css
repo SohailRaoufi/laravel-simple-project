@@ -1,0 +1,62 @@
+@media (max-width: 767px) {
+  .sidebar {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  
+  .sidebar .flex-column {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+  }
+  
+  .sidebar hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar .dropdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .button-post {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  /* Add Bootstrap responsive table classes */
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  
+  .table-responsive > .table {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+}

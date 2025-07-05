@@ -1,0 +1,171 @@
+/* CSS Custom Properties for Theme Management */
+:root {
+  --primary-color: #0056b3;
+  --secondary-color: #e9ecef;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+  --footer-background: #212529;
+  --footer-text-color: #fff;
+  --link-color: var(--primary-color);
+  --link-hover-color: #002957;
+}
+
+/* General Styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Utility Classes */
+/* .wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 9.6rem 0;
+} */
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Navigation Bar */
+nav {
+  background: var(--primary-color);
+  color: var(--footer-text-color);
+  padding: 1rem 0;
+  position: relative;
+}
+
+nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--secondary-color);
+}
+
+.logo a {
+  color: var(--footer-text-color);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--footer-text-color);
+  font-weight: 500;
+  transition: color 0.3s ease-in;
+}
+
+.nav-links a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Hero Section */
+.hero {
+ width: 1200px;
+ height: auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Main Content */
+.main-grid {
+  display: grid;
+  grid-template-columns:1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.article-content h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.article-content p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.date-container p{
+  margin-left: 0.1rem;
+  opacity: 0.7;
+}
+
+
+/* Footer */
+footer {
+  background: var(--footer-background);
+  color: var(--footer-text-color);
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-links li {
+    margin-bottom: 0.75rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero,
+  .article-content,
+  .sidebar {
+    padding: 1.5rem;
+  }
+}

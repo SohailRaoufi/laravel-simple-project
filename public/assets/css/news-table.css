@@ -1,0 +1,29 @@
+.table-container{
+  width: 68rem;
+  margin-top: 2rem;
+}
+table a{
+  text-decoration: none;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+.btn-container a{
+  margin-right: 1.2rem;
+}
+table form button{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  position: relative;
+  margin-right: 0.8rem;
+}
+table form button img{
+  position: absolute;
+  bottom: -0.35rem;
+}
+table tr:hover .btn-container{
+  opacity: 1;
+}
